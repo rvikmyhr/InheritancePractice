@@ -12,4 +12,12 @@ package my.concrete;
  */
 public class HourlyEmployee extends Employee {
     private double hourlyPay;
+
+    public double getHourlyPay() {
+        return hourlyPay;
+    }
+
+    public void setHourlyPay(double hourlyPay) {
+        this.hourlyPay = hourlyPay;
+    }
 }
