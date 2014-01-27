@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.concrete;
+
+package myabstract;
 
 /**
  *
  * @author Ron
  */
 public class Startup {
-
     public static void main(String[] args) {
-
-        HourlyEmployee person1 = new HourlyEmployee();
+        my.concrete.HourlyEmployee person1 = new my.concrete.HourlyEmployee();
 
         person1.setFirstName("John");
         person1.setLastName("Doe");
@@ -23,7 +22,7 @@ public class Startup {
         System.out.println(person1.getLastName());
         System.out.println(person1.getEmployeeNum());
         
-        SalaryPlusCommissionEmployee person2 = new SalaryPlusCommissionEmployee();
+        my.concrete.SalaryPlusCommissionEmployee person2 = new my.concrete.SalaryPlusCommissionEmployee();
         
         person2.setFirstName("Dave");
         person2.setLastName("Smith");

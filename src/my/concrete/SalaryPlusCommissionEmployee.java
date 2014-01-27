@@ -12,4 +12,14 @@ package my.concrete;
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     private double commissionPercentage;
+
+    public double getCommissionPercentage() {
+        return commissionPercentage;
+    }
+
+    public void setCommissionPercentage(double commissionPercentage) {
+        this.commissionPercentage = commissionPercentage;
+    }
+    
+    
 }
