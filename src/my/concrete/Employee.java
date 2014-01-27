@@ -11,5 +11,7 @@ package my.concrete;
  * @author Ron
  */
 public class Employee {
-    
+    private String firstName;
+    private String lastName;
+    private int employeeNum;
 }

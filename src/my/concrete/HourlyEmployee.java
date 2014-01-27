@@ -11,5 +11,5 @@ package my.concrete;
  * @author Ron
  */
 public class HourlyEmployee extends Employee {
-    
+    private double hourlyPay;
 }

@@ -11,5 +11,7 @@ package my.concrete;
  * @author Ron
  */
 public class SalariedEmployee extends Employee {
-    
+    private double annualSalary;
+    private boolean overtimeQualified;
+    private boolean commissionQualified;
 }
