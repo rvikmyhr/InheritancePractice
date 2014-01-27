@@ -14,6 +14,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private int employeeNum;
+    private String address;
 
     public String getFirstName() {
         return firstName;
