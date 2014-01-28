@@ -48,6 +48,10 @@ public abstract class Employee {
         this.address = address;
     }
     
+    public String getEmpInfo(){
+        return firstName + " " + lastName + ", " + employeeNum;
+    }
+    
     public abstract double calcPayCheckAmount();
     
 }

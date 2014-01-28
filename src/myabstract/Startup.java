@@ -20,9 +20,7 @@ public class Startup {
         person1.setHourlyPay(12);
         person1.setHoursWorked(4);
         
-        System.out.println(person1.getFirstName());
-        System.out.println(person1.getLastName());
-        System.out.println(person1.getEmployeeNum());
+        System.out.println(person1.getEmpInfo());
         System.out.println(person1.calcPayCheckAmount());
         
         SalaryPlusCommissionEmployee person2 = new SalaryPlusCommissionEmployee();
@@ -33,9 +31,8 @@ public class Startup {
         person2.setAnnualSalary(40000);
         person2.setCommissionEarned(500);
         
-        System.out.println(person2.getFirstName());
-        System.out.println(person2.getLastName());
-        System.out.println(person2.getEmployeeNum());
+        System.out.println(person2.getEmpInfo());
         System.out.println(person2.calcPayCheckAmount());
+        
     }
 }
