@@ -10,13 +10,20 @@ package myabstract;
  *
  * @author Ron
  */
-public abstract class SalaryPlusCommissionEmployee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
-    private double commissionPercentage;
+    private double commissionEarned;
 
-    public void setCommissionPercentage(double commissionPercentage) {
-        this.commissionPercentage = commissionPercentage;
+    public void setCommissionEarned(double commissionEarned) {
+        this.commissionEarned = commissionEarned;
+    }
+
+    public double getCommissionEarned() {
+        return commissionEarned;
     }
     
-    public abstract double getTotalPay();
+    @Override
+    public double calcPayCheckAmount(){
+        return (getAnnualSalary() / 52.1775) + commissionEarned;
+    }
 }

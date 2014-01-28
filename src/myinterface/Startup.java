@@ -11,8 +11,24 @@ package myinterface;
  * @author Ron
  */
 public class Startup {
-    my.concrete.HourlyEmployee person1 = new my.concrete.HourlyEmployee();
-       
-    my.concrete.SalaryPlusCommissionEmployee person2 = new my.concrete.SalaryPlusCommissionEmployee();
-
+    public static void main(String[] args) {
+        
+    HourlyEmployee person3 = new HourlyEmployee();
+    person3.setFirstName("Bob");
+    person3.setLastName("Jones");
+    person3.setHourlyPay(20);
+    SalaryPlusCommissionEmployee person4 = new SalaryPlusCommissionEmployee();
+    person4.setFirstName("Beth");
+    person4.setLastName("Brown");
+    person4.setCommissionPercentage(.06);
+    
+    System.out.println(person3.getFirstName());
+    System.out.println(person3.getLastName());
+    System.out.println(person3.getHourlyPay());
+    
+    System.out.println(person4.getFirstName());
+    System.out.println(person4.getLastName());
+    System.out.println(person4.getCommissionPercentage());
+    
+    }
 }

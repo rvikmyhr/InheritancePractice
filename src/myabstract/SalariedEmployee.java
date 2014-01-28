@@ -10,12 +10,21 @@ package myabstract;
  *
  * @author Ron
  */
-public abstract class SalariedEmployee {
+public class SalariedEmployee extends Employee {
     private double annualSalary;
 
     public void setAnnualSalary(double annualSalary) {
         this.annualSalary = annualSalary;
     }
+
+    public double getAnnualSalary() {
+        return annualSalary;
+    }
+
     
-    public abstract double getPayCheckTotal();
+    @Override
+    public double calcPayCheckAmount(){
+        return annualSalary / 52.1775;
+    }
+    
 }

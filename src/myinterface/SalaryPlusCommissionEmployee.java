@@ -10,6 +10,16 @@ package myinterface;
  *
  * @author Ron
  */
-public interface SalaryPlusCommissionEmployee extends Employee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Employee {
+    
+    private double commissionPercentage;
+
+    public double getCommissionPercentage() {
+        return commissionPercentage;
+    }
+
+    public void setCommissionPercentage(double commissionPercentage) {
+        this.commissionPercentage = commissionPercentage;
+    }
     
 }

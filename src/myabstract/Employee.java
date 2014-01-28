@@ -16,10 +16,38 @@ public abstract class Employee {
     private int employeeNum;
     private String address;
 
+    public String getLastName() {
+        return lastName;
+    }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public int getEmployeeNum() {
+        return employeeNum;
+    }
+
+    public void setEmployeeNum(int employeeNum) {
+        this.employeeNum = employeeNum;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
     
-    public abstract String getEmployeeInformation();
+    public abstract double calcPayCheckAmount();
     
 }

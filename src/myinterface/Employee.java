@@ -11,6 +11,7 @@ package myinterface;
  * @author Ron
  */
 public interface Employee {
+    
     public void setFirstName(String firstName);
     public void setLastName(String lastName);
     public void setEmployeeNum(int employeeNum);

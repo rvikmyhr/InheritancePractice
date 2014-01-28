@@ -10,7 +10,44 @@ package myinterface;
  *
  * @author Ron
  */
-public interface HourlyEmployee extends Employee {
-    public void setHourlyPay();
-    public void getHourlyPay();
+public class HourlyEmployee implements Employee {
+    
+    private String firstName;
+    private String lastName;
+    private int employeeNum;
+    private double hourlyPay;
+    
+    public String getFirstName() {
+        return firstName;
+    }
+
+    @Override
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    @Override
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
+    
+    
+    @Override
+    public void setEmployeeNum(int employeeNum){
+        this.employeeNum = employeeNum;
+    }
+
+    public double getHourlyPay() {
+        return hourlyPay;
+    }
+
+    public void setHourlyPay(double hourlyPay) {
+        this.hourlyPay = hourlyPay;
+    }
+    
 }

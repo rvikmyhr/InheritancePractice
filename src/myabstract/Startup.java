@@ -12,28 +12,30 @@ package myabstract;
  */
 public class Startup {
     public static void main(String[] args) {
-        my.concrete.HourlyEmployee person1 = new my.concrete.HourlyEmployee();
+        HourlyEmployee person1 = new HourlyEmployee();
 
         person1.setFirstName("John");
         person1.setLastName("Doe");
         person1.setEmployeeNum(123456);
+        person1.setHourlyPay(12);
+        person1.setHoursWorked(4);
         
         System.out.println(person1.getFirstName());
         System.out.println(person1.getLastName());
         System.out.println(person1.getEmployeeNum());
+        System.out.println(person1.calcPayCheckAmount());
         
-        my.concrete.SalaryPlusCommissionEmployee person2 = new my.concrete.SalaryPlusCommissionEmployee();
+        SalaryPlusCommissionEmployee person2 = new SalaryPlusCommissionEmployee();
         
         person2.setFirstName("Dave");
         person2.setLastName("Smith");
         person2.setEmployeeNum(654321);
         person2.setAnnualSalary(40000);
-        person2.setCommissionPercentage(0.1);
+        person2.setCommissionEarned(500);
         
         System.out.println(person2.getFirstName());
         System.out.println(person2.getLastName());
         System.out.println(person2.getEmployeeNum());
-        System.out.println(person2.getAnnualSalary());
-        System.out.println(person2.getCommissionPercentage());
+        System.out.println(person2.calcPayCheckAmount());
     }
 }

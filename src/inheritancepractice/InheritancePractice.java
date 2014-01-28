@@ -6,6 +6,8 @@
 
 package inheritancepractice;
 
+import my.concrete.Employee;
+
 /**
  *
  * @author Ron
@@ -16,7 +18,7 @@ public class InheritancePractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        Employee person3 = new Employee();
         
         
     }

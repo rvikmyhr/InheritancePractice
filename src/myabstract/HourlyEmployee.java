@@ -10,12 +10,30 @@ package myabstract;
  *
  * @author Ron
  */
-public abstract class HourlyEmployee {
+public class HourlyEmployee extends Employee {
     private double hourlyPay;
+    private double hoursWorked;
     
     public void setHourlyPay(double hourlyPay){
         this.hourlyPay = hourlyPay;
     }
+
+    public double getHourlyPay() {
+        return hourlyPay;
+    }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
     
-    public abstract double getTotalWage();
+ 
+    @Override
+    public double calcPayCheckAmount(){
+        return hourlyPay * hoursWorked;
+    }
+
 }
