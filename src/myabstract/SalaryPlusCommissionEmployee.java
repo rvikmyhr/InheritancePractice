@@ -23,7 +23,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     }
     
     @Override
-    public double calcPayCheckAmount(){
+    public double calcWeeklyPay(){
         return (getAnnualSalary() / 52.1775) + commissionEarned;
     }
 }

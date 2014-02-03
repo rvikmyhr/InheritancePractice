@@ -12,7 +12,7 @@ package myabstract;
  */
 public class HourlyEmployee extends Employee {
     private double hourlyPay;
-    private double hoursWorked;
+    private double hoursWorkedWeekly;
     
     public void setHourlyPay(double hourlyPay){
         this.hourlyPay = hourlyPay;
@@ -22,18 +22,18 @@ public class HourlyEmployee extends Employee {
         return hourlyPay;
     }
 
-    public double getHoursWorked() {
-        return hoursWorked;
+    public double getHoursWorkedWeekly() {
+        return hoursWorkedWeekly;
     }
 
-    public void setHoursWorked(double hoursWorked) {
-        this.hoursWorked = hoursWorked;
+    public void setHoursWorkedWeekly(double hoursWorkedWeekly) {
+        this.hoursWorkedWeekly = hoursWorkedWeekly;
     }
     
  
     @Override
-    public double calcPayCheckAmount(){
-        return hourlyPay * hoursWorked;
+    public double calcWeeklyPay(){
+        return hourlyPay * hoursWorkedWeekly;
     }
 
 }

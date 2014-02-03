@@ -52,6 +52,6 @@ public abstract class Employee {
         return firstName + " " + lastName + ", " + employeeNum;
     }
     
-    public abstract double calcPayCheckAmount();
+    public abstract double calcWeeklyPay();
     
 }

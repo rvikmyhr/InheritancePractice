@@ -23,7 +23,7 @@ public class SalariedEmployee extends Employee {
 
     
     @Override
-    public double calcPayCheckAmount(){
+    public double calcWeeklyPay(){
         return annualSalary / 52.1775;
     }
     
